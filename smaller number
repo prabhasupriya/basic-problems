@@ -1,0 +1,30 @@
+package basicprograms;
+/*
+ * smaller number amonge 2 numbers
+ */
+import java.util.Scanner;
+public class smallernumber {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("Enter a number ");
+	int a = sc.nextInt();
+	System.out.println("Enter num2 ");
+	int num2 = sc.nextInt();
+	String b = sc.next();
+	//create a empty nextLine to handle enter pressing
+	sc.nextLine();
+	String c = sc.nextLine();
+	if ( a< num2) {
+		System.out.println(a + " is smaller number ");
+	}
+	else if(a == num2) {
+		System.out.println("Both are equal ");
+	}
+	else {
+		System.out.println(num2 + " is smaller number ");
+	}
+	
+	System.out.println("the word is " + b);
+	System.out.println("the sentence is " + c);
+}
+}
