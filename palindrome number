@@ -1,0 +1,35 @@
+package basicprograms;
+/**
+ * documentation comment 
+ * @author supriya
+ *palindrome number the reverse of number is original number
+ *example 1221  by reversing also it gives 1221
+ */
+import java.util.Scanner;
+public class Palindrom {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter a number ");
+	int h = sc.nextInt();
+	while(h >0) {
+    System.out.print("Enter a number ");
+    int s = sc.nextInt();
+    int digit =0;
+    int temp =s;
+    int reverse =0;
+    while(temp > 0) {
+    	digit = temp%10;
+    	reverse = reverse*10 + digit ;
+    	temp =temp/10;
+    }
+    if(s == reverse) {
+    	System.out.print(s+ " it is a palindrome number ");
+        
+    }
+    else {
+    	System.out.print(s+ " it is not  a palindrome number ");
+    }
+    h = h-1;
+	}
+}
+}
